@@ -4,7 +4,6 @@ class SearchBar extends React.Component {
 
     state= {
         term: '',
-        label:'label here'
     };
 
     // to use 'this', we have to bind the method(onFormSubmit) to the class(SearchBar) in the constructor object.
@@ -20,7 +19,7 @@ class SearchBar extends React.Component {
         <div className= 'ui segment'>
             <form onSubmit= {this.onFormSubmit} className= 'ui form'>
                 <div className='field'>
-                    <label>{this.state.label}</label>
+                    <label>Image Search</label>
                     <input 
                         type='text' 
                         value={this.state.term}
